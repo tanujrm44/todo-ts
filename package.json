@@ -2,11 +2,11 @@
   "name": "todo-ts",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "webpack serve",
-    "start": "webpack-dev-server",
-    "build": "webpack --config webpack.config.prod.js"
-  },
+ "scripts": {
+  "build": "webpack --config webpack.config.prod.js",
+  "start": "webpack serve --config webpack.config.dev.js --open",
+  "dev": "webpack serve --config webpack.config.dev.js --mode development"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
